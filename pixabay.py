@@ -2,9 +2,10 @@ import requests
 import json
 import subprocess
 import sys
+import os
 
-
-KEY = 'hellothisismyapikey'
+result = subprocess.run(['cat', os.path.expanduser('~/pixabay_api_key')], capture_output = True)
+KEY = result.stdout.strip()
 
 URL = 'https://pixabay.com/api'
 
