@@ -10,8 +10,8 @@ data = {
 	"stream": False,
 	"options": {
 		"num_predict": -1,
-#		"seed": 0,
-		"temperature": 10
+		"seed": 0,
+		"temperature": 0.7
 	}
 }
 
