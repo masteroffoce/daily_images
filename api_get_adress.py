@@ -20,7 +20,7 @@ params = {
 }
 
 response = requests.get(URL, params=params)
-newrl = response.json()['hits'][0]['pageURL']
+newrl = response.json()['hits'][0]['largeImageURL']
 
 #subprocess.run(['xdg-open', newrl])
 print(newrl)

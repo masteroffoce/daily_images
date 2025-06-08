@@ -1,9 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+import sys
+
+#Get chosen date
+date = sys.argv[1]
 
 #Find the Wikipedia site for the chosen date
-url = 'http://en.wikipedia.org/wiki/May_4'
+url = f'http://en.wikipedia.org/wiki/{date}'
 response = requests.get(url)
 
 soup = BeautifulSoup(response.text, 'html.parser')
