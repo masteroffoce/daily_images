@@ -3,7 +3,8 @@ import json
 import subprocess
 import sys
 
-KEY = '50727327-bd98892090324aaa696e307bc'
+
+KEY = 'hellothisismyapikey'
 
 URL = 'https://pixabay.com/api'
 
